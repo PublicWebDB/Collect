@@ -4,59 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>录</title>
-    <style>
-        .main-title
-        {
-            text-align: center;
-        }
-        .top-bar
-    {
-        border: solid 2px red;
-        width: 100%;
-        background-color: aliceblue;
-    }
-    .top-bar > .head-link-btn
-    {
-        background-color: #231557;
-        border: solid 2px #231557;
-        width: fit-content;
-        display: inline;
-    }
-    .top-bar > .head-link-btn > a
-    {
-        text-decoration: none;
-        color: white;
-    }
-    .top-bar > .search-bar
-    {
-        background-color: ;
-    }
-    .top-bar > .search
-    {
-        background-color: red;
-    }
-    .top-bar > .upload
-    {
-        background-color: yellow;
-    }
-    .top-bar > .login
-    {
-        background-color: green;
-    }
-    .top-bar > .register
-    {
-        background-color: blue;
-    }
-    </style>
-    
-
+    <title>网络大黄录</title>
+    <link rel="stylesheet" href="index.css">    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
     <p>欢迎广大网友提交硬核资料</p>
-    <h1 class="main-title">录</h1>
+    <h1 class="main-title">网络大黄录</h1>
     <nav class="top-bar">
-        <h1 class="head-link-btn"><a href="index.html">录</a></h1>
+        <h1 class="head-link-btn"><a href="index.html">网络大黄录</a></h1>
         <input class="search-bar" type="text" placeholder="请输入搜索内容">
         <button class="search">搜索</button>
     </nav>
@@ -121,8 +78,7 @@
     <h2><a href="录/象/index.html">象</a></h2>
     <h2>电脑音乐录</h2>
     <div id="content"></div>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  
     <script>
         $(function()
         {
@@ -132,5 +88,43 @@
             })
         })
     </script>
+    <h2>网友资料库</h2>
+    <!-- 引用类型，直接获取 -->
+    <!-- <p class="article" content="网友资料库/正论，卷三大潮反卷.txt"></p> -->
+    <script>
+        $(function()
+        {
+            $("#article").html()
+        })
+    </script>
+    <p id="article"></p>
+
+    <h2>工具</h2>
+    <dl>
+        <dt>工具</dt>
+        <dd></dd>
+    </dl>
+    <dl>
+        <dt>道具</dt>
+        <dd></dd>
+    </dl>
+    <dl>
+        <dt>器具</dt>
+        <dd></dd>
+    </dl>
+    <h2>编程语言大收录</h2>
+    <a href="https://github.com/2439905184/program-languages-collect">编程语言大收录</a>
+    <h2>非正式语言大全集</h2>
+    <p>抗日战争时期：协和语（大佐语）</p>
+    <p>ChanEnglish:中国式英语</p>
+    <p>洋泾浜</p>
+
+    <h2>适合做电音的合成器</h2>
+    <ol>
+        <li>drive-专门做house lead用(德国Ujam公司)</li>
+        <li>orbit(pad合成器)</li>
+        <li>micro Keys(90年代复古键盘）</li>
+    </ol>
+    <footer>出自——<a href="https://www.bilibili.com/video/BV1qM4y147bj/?spm_id_from=333.880.my_history.page.click">五个适合电音制作的免费合成器</a></footer>
 </body>
 </html>
