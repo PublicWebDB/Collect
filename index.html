@@ -7,7 +7,7 @@
     <!-- 搜索引擎优化 -->
     <meta name="免费" content="下次一定 - 专门为白嫖怪开发的宝藏网站">
     <meta name="無料" content="免费内容">
-    <title>网络大黄录</title>
+    <title>网络大黄录-全能型网址导航</title>
     <link rel="stylesheet" href="index.css">    
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
@@ -16,10 +16,32 @@
         {
             margin: 0px;
         }
-        .content
+        .app > .content
         {
             margin-left: 8px;
             margin-right: 8px;
+        }
+        .panel > .left-menu
+        {
+            display: inline-block;
+            vertical-align: top;
+            border: solid 2px black;
+            width: 300px;
+            height: fit-content;
+        }
+        .panel > .left-menu >ul
+        {
+            padding-left: 0px;
+        }
+        .panel > .left-menu >ul:hover
+        {
+            cursor: pointer;
+        }
+        .panel > .content
+        {
+            display: inline-block;
+            vertical-align: top;
+            border: solid 2px black;
         }
     </style>
 </head>
@@ -34,70 +56,41 @@
         </nav>
         <div class="content">
             <p>这是一个神奇的网络匿名资料库</p>
-    <p>欢迎广大网友提交硬核资料</p>
-    
-    <h2>相关收录网站</h2>
-    <a href="https://github.com/2439905184/Galgame-Engine-Collect">Galgame引擎收录大全</a>
-    <h2>免费音乐素材站</h2>
-    <ol>
-        <li><a href="https://itch.io/game-assets/free/tag-music">itch.io</a></li>
-        <li><a href="https://freemusicarchive.org/home">freemusicAchive</a></li>
-        <li><a href="https://maou.audio/category/bgm/">maou.audio</a></li>
-        <li><a href="https://opengameart.org/art-search-advanced?keys=&field_art_type_tid%5B%5D=12&sort_by=count&sort_order=DESC">openGameArt</a></li>
-    </ol>
-    <h2>免费音乐制作软件(DAW)</h2>
-    <ol>
-        <li><a href="https://warmplace.ru/soft/sunvox/">sunvox</a></li>
-        <li><a href="https://lmms.io/">lmms</a></li>
-        <li><a href="http://www.drpetter.se/project_musagi.html">musagi</a></li>
-    </ol>
-    <a href="https://zhuanlan.zhihu.com/p/474001591">参考建议-十个好用又免费的DAW</a>
-    <h2>rss订阅</h2>
-    <h2>站长的碎碎念</h2>
-    <dl>
-        <dt>经验</dt>
-        <dd>经验全集</dd>
-        <dd>作曲</dd>
-    </dl>
+            <p>欢迎广大网友提交硬核资料</p>
+        </div>
 
-    <h2><a href="录/象/index.html">象</a></h2>
-    <h2>电脑音乐录</h2>
-    <div id="content"></div>
-  
-    <script>
-        $(function()
-        {
-            $.get("/录/电脑音乐技术录.md",function(respone,status,xhr)
-            {
-                $("#content").html(marked.parse(respone))
-            })
-        })
-    </script>
-  
+        <ul class="app-bar">
+            <li>
+                <a href="https://www.wikihow.com/Main-Page">
+                    <img src="https://www.wikihow.com/skins/WikiHow/wH-initials_152x152.png" alt="" srcset="">
+                    wikihow
+                </a>
+            </li>
+        </ul>
+        <div class="panel">
+            <div class="left-menu">
+                <ul>
+                    <li>去中心化/网络/万维网</li>
+                    <li>站长的收集册/网友的收集册</li>
+                    <li>程序员/开发/SDK</li>
+                    <li>网盘/下载/资源</li>
+                    <li>技术/工匠</li>
+                    <li>外星人</li>
+                </ul>
+                
+            </div>
+            <div class="content">
+                <a href="https://www.theta.tv" target="_blank">Theta.tv去中心化视频平台</a>
+                <a href=""></a>
+                <h2>Vtuber dd粉丝专用</h2>
+                <a href="http://live.yj1211.work/index/home/areas">全平台监控室</a>
+            </div>
+        </div>
 
-    <h2>网盘服务速查大表格</h2>
-    <a href="https://github.com/2439905184/Netdisk-collect">Netdisk-collect</a>
-        <!-- wikihow 分区 -->
-    <hr/>
-    <h2>高技术网民培养</h2>
-    <h2>如何寻找免费的好东西（搜索引擎关键字）</h2>
-    <dl>
-        <dt>国内</dt>
-        <dd>免费、微信公众号、小众果壳网之类的</dd>
-    </dl>
-    <dl>
-        <dt>国外</dt>
-        <dd>开源</dd>
-        <dd>免费私有软件</dd>
-    </dl>
-    <dl>
-        <dt>日本</dt>
-        <dd>無料</dd>
-    </dl>
-    <p>搜索引擎关键字："gig"，"大容量"</p>
-</div>
-   
+        <div>
+            站长百科
+        </div>
     </div>
-    <h2>编辑推荐</h2>
+    
 </body>
 </html>
