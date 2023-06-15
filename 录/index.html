@@ -5,9 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>录</title>
+    <style>
+        #top
+        {
+            position: absolute;
+            top:0;
+            right: 0;
+        }
+    </style>
 </head>
 <body>
     <h1 style="text-align: center;">综合</h1>
+    <div id="top">
     <h2>筛选开关</h2>
     <!-- 网页四象，分类，显示 -->
     <table border="2px">
@@ -21,7 +30,7 @@
         <tr>
             <th><button>吃</button></th>
             <th><button>穿</button></th>
-            <th><button onclick="toogle_use()">用</button></th>
+            <th><button id="use-ctl" onclick="toogle_use()">用</button></th>
         </tr>
         <tr>
             <th><button>衣</button></th>
@@ -37,8 +46,10 @@
             <th><button>灵异事件</button></th>
             <th><button>民间经验</button></th>
             <th><button>学道/修道记录</button></th>
+            <th><button>起名字算命等参考</button></th>
         </tr>
     </table>
+</div>
     <span>有关链接</span>
     <a href="">大众点评</a>
     <!--  -->
@@ -266,30 +277,43 @@
 <div class="ling-xin">
     <a href="https://www.zhihu.com/column/c_1438987847953379328">灵性修炼指导手册</a>
 </div>
+<h2>起名字单字参考</h2>
+<ol>
+    <li>秀</li>
+    <li>敏</li>
+    <li>建</li>
+    <li>成</li>
+    <li>辰</li>
+    <li>晟</li>
+    <li>霞</li>
+    <li>客</li>
+</ol>
 
 <script>
-    var index = 0
-    function toogle_use()
+    $(function()
     {
-        var uses = document.getElementsByClassName("use")
-        console.log(uses)
-        if(index %2 == 0)
+        $("#use-ctl").toogle(function()
         {
-            for(use in uses)
-            {
-                console.log(use)
-                use.style = "display:hide"
-            }
-        }
-        else
-        {
-            for(use in uses)
-            {
-                use.style = "display:show"
-            }
-        }
-        index += 1
-    }
+            console.log("开关")
+            // $(".use").
+            
+        })
+    })
+    // var index = 0
+    // function toogle_use()
+    // {
+    //     var uses = document.getElementsByClassName("use")
+    //     console.log(uses)
+    //     if(index %2 == 0)
+    //     {
+    //         console.log("开")
+    //     }
+    //     else
+    //     {
+            
+    //     }
+    //     index += 1
+    // }
 </script>
 </body>
 </html>
