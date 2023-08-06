@@ -1,0 +1,8 @@
+1. 使用dnspy打开Assembly-CSharp.dll
+2. 汉化字符串
+
+1. 找到package集合为SizeboxUI的集合，修改类似xxxView的类的字符串
+2. 找到Sizebox.CharacterEditor集合package，修改xxxView的类的字符串
+3. 找到Package为Pause的集合，修改xxxView的字符串
+
+4. 文件->保存模块（覆盖）
