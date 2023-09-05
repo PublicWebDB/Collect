@@ -1,0 +1,6 @@
+1. mc起源于2009
+2. terasology起源于xx年
+3. minetest起源于
+
+doc加入mojang，提出md3角色模型网格结构
+mc的Infdev提出无限地形世界
