@@ -12,5 +12,6 @@
 | 小鹿快传 |https://deershare.com/send | p2p不依赖服务器 | 无 | 
 | nya盘 | https://pan.nyaku.moe/ | 支持外链 | 不清楚，主要用于喵御宅视频投稿 |
 | 日本千兆文件飞行 |https://gigafile.nu/| 支持短连接| 300GB|
-[小鹿快传源码](https://github.com/fanchangyong/deershare)
-[第三方网盘收录](http://qwang.cn/)
+|[小鹿快传源码](https://github.com/fanchangyong/deershare)
+|[第三方网盘收录](http://qwang.cn/)
+| 蓝奏云优享版 |https://www.ilanzou.com/| 支持超过100MB文件上传|
